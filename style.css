@@ -772,6 +772,30 @@ body {
   transform: translateY(0);
 }
 
+.gallery__overlay--visible {
+  background: rgba(0,0,0,0.5);
+}
+
+.gallery__overlay--visible span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery__item--placeholder {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--gray-100),
+      var(--gray-100) 10px,
+      var(--gray-200) 10px,
+      var(--gray-200) 20px
+    );
+}
+
+.gallery__item--placeholder:hover .gallery__overlay {
+  background: rgba(0,0,0,0.55);
+}
+
 /* --- PRICING --- */
 .pricing { background: var(--gray-100); }
 
