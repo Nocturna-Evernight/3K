@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="3K — Tech repairs, tech assistance, and academic support services." />
-  <title>3K | Tech & Academic Services</title>
+  <title>3K | Tech &amp; Academic Services</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +18,7 @@
       <a href="#" class="nav__logo">3<span>K</span></a>
       <ul class="nav__links">
         <li><a href="#services">Services</a></li>
+        <li><a href="#process">How It Works</a></li>
         <li><a href="#gallery">Work</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#about">About</a></li>
@@ -34,6 +35,7 @@
     <div class="nav__mobile" id="mobileMenu">
       <ul>
         <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#process" onclick="closeMobileMenu()">How It Works</a></li>
         <li><a href="#gallery" onclick="closeMobileMenu()">Work</a></li>
         <li><a href="#pricing" onclick="closeMobileMenu()">Pricing</a></li>
         <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
@@ -44,10 +46,19 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80&auto=format&fit=crop"
+        alt="Developer at dual monitor workstation"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero__bg-overlay"></div>
+    </div>
     <div class="container hero__inner">
       <div class="hero__badge">🚀 Now Open for Clients</div>
       <h1 class="hero__title">
-        Tech & Academic<br/>
+        Tech &amp; Academic<br/>
         <span>Services, Done Right.</span>
       </h1>
       <p class="hero__sub">
@@ -58,7 +69,7 @@
         <button class="btn btn--primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
           Our Services
         </button>
-        <button class="btn btn--outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        <button class="btn btn--outline btn--outline-light" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
           Book a Session
         </button>
       </div>
@@ -103,18 +114,22 @@
 
         <div class="card">
           <div class="card__img">
-            <img src="images/service-repairs.jpg" alt="Tech Repairs" loading="lazy" />
+            <img
+              src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80&auto=format&fit=crop"
+              alt="PC and hardware repair bench"
+              loading="lazy"
+            />
           </div>
           <div class="card__icon">🔧</div>
           <h3 class="card__title">Tech Repairs</h3>
           <p class="card__desc">
-            Laptop & PC troubleshooting, OS reinstallation, hardware fixes,
+            Laptop &amp; PC troubleshooting, OS reinstallation, hardware fixes,
             slow device tune-ups, and more.
           </p>
           <ul class="card__list">
-            <li>Virus & malware removal</li>
-            <li>Hardware diagnosis & repair</li>
-            <li>OS setup & reinstall</li>
+            <li>Virus &amp; malware removal</li>
+            <li>Hardware diagnosis &amp; repair</li>
+            <li>OS setup &amp; reinstall</li>
             <li>Performance optimization</li>
           </ul>
         </div>
@@ -122,7 +137,11 @@
         <div class="card card--featured">
           <div class="card__badge">Most Requested</div>
           <div class="card__img">
-            <img src="images/service-assist.jpg" alt="Tech Assistance" loading="lazy" />
+            <img
+              src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=800&q=80&auto=format&fit=crop"
+              alt="Person setting up software on laptop"
+              loading="lazy"
+            />
           </div>
           <div class="card__icon">💻</div>
           <h3 class="card__title">Tech Assistance</h3>
@@ -131,16 +150,20 @@
             We're your personal tech assistant.
           </p>
           <ul class="card__list">
-            <li>Software setup & configuration</li>
-            <li>Network & Wi-Fi issues</li>
-            <li>File recovery & backup</li>
-            <li>Remote & on-site support</li>
+            <li>Software setup &amp; configuration</li>
+            <li>Network &amp; Wi-Fi issues</li>
+            <li>File recovery &amp; backup</li>
+            <li>Remote &amp; on-site support</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="card__img">
-            <img src="images/service-academic.jpg" alt="Academic Assistance" loading="lazy" />
+            <img
+              src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80&auto=format&fit=crop"
+              alt="Student studying and writing reports"
+              loading="lazy"
+            />
           </div>
           <div class="card__icon">📚</div>
           <h3 class="card__title">Academic Assistance</h3>
@@ -149,11 +172,64 @@
             We can guide and support you through it.
           </p>
           <ul class="card__list">
-            <li>Research & documentation help</li>
+            <li>Research &amp; documentation help</li>
             <li>Presentation design (PPT)</li>
-            <li>Proofreading & formatting</li>
+            <li>Proofreading &amp; formatting</li>
             <li>Tech-related school projects</li>
           </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS / PROCESS -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Simple Steps</span>
+        <h2 class="section__title">How It Works</h2>
+        <p class="section__sub">Getting help from 3K is quick and straightforward.</p>
+      </div>
+      <div class="process__grid">
+
+        <div class="process__step">
+          <div class="process__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80&auto=format&fit=crop"
+              alt="Sending a message on a smartphone"
+              loading="lazy"
+            />
+          </div>
+          <div class="process__num">01</div>
+          <h3 class="process__title">Reach Out</h3>
+          <p class="process__desc">Fill out our contact form or message us directly. Tell us what you need — no judgment, no jargon.</p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80&auto=format&fit=crop"
+              alt="Team discussing a plan at a table"
+              loading="lazy"
+            />
+          </div>
+          <div class="process__num">02</div>
+          <h3 class="process__title">We Assess</h3>
+          <p class="process__desc">We review your situation, give you a clear quote, and agree on a timeline. Transparent, always.</p>
+        </div>
+
+        <div class="process__step">
+          <div class="process__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=600&q=80&auto=format&fit=crop"
+              alt="Hands typing on a keyboard working on a task"
+              loading="lazy"
+            />
+          </div>
+          <div class="process__num">03</div>
+          <h3 class="process__title">We Deliver</h3>
+          <p class="process__desc">We get to work and keep you updated. Fast turnaround, quality output — that's the 3K standard.</p>
         </div>
 
       </div>
@@ -169,27 +245,76 @@
         <p class="section__sub">A glimpse into the kind of work 3K takes on every day.</p>
       </div>
       <div class="gallery__grid">
+
+        <!-- Row 1: wide banner -->
         <div class="gallery__item gallery__item--wide">
-          <img src="images/gallery-wide.jpg" alt="3K workbench" loading="lazy" />
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=80&auto=format&fit=crop"
+            alt="Developer workstation with code on screen"
+            loading="lazy"
+          />
           <div class="gallery__overlay">
-            <span>Our Setup</span>
+            <span>Code &amp; Craft</span>
           </div>
         </div>
-        <div class="gallery__item gallery__item--placeholder" data-label="⌨️ In the Zone">
-          <div class="gallery__overlay gallery__overlay--visible">
-            <span>⌨️ In the Zone</span>
+
+        <!-- Row 2: 3 square tiles -->
+        <div class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80&auto=format&fit=crop"
+            alt="Technician repairing a laptop motherboard"
+            loading="lazy"
+          />
+          <div class="gallery__overlay">
+            <span>🔧 Hardware Repair</span>
           </div>
         </div>
-        <div class="gallery__item gallery__item--placeholder" data-label="🌙 Late Night Grind">
-          <div class="gallery__overlay gallery__overlay--visible">
-            <span>🌙 Late Night Grind</span>
+
+        <div class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80&auto=format&fit=crop"
+            alt="Student writing a research paper"
+            loading="lazy"
+          />
+          <div class="gallery__overlay">
+            <span>📝 Academic Support</span>
           </div>
         </div>
-        <div class="gallery__item gallery__item--placeholder" data-label="🔬 Deep in the Chips">
-          <div class="gallery__overlay gallery__overlay--visible">
-            <span>🔬 Deep in the Chips</span>
+
+        <div class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80&auto=format&fit=crop"
+            alt="Network cables and router setup"
+            loading="lazy"
+          />
+          <div class="gallery__overlay">
+            <span>🌐 Network Setup</span>
           </div>
         </div>
+
+        <!-- Row 3: 2 landscape tiles -->
+        <div class="gallery__item gallery__item--half">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop"
+            alt="Tech consultation session"
+            loading="lazy"
+          />
+          <div class="gallery__overlay">
+            <span>🤝 Consultation</span>
+          </div>
+        </div>
+
+        <div class="gallery__item gallery__item--half">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&auto=format&fit=crop"
+            alt="Team working on laptops together"
+            loading="lazy"
+          />
+          <div class="gallery__overlay">
+            <span>⌨️ Late Night Grind</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -212,7 +337,7 @@
             <span class="pricing__amount">₱150</span>
           </div>
           <ul class="pricing__list">
-            <li>Virus & malware removal</li>
+            <li>Virus &amp; malware removal</li>
             <li>OS reinstallation</li>
             <li>Hardware diagnosis</li>
             <li>Performance tune-up</li>
@@ -232,9 +357,9 @@
             <span class="pricing__amount">₱100</span>
           </div>
           <ul class="pricing__list">
-            <li>Software setup & config</li>
+            <li>Software setup &amp; config</li>
             <li>Network troubleshooting</li>
-            <li>File recovery & backup</li>
+            <li>File recovery &amp; backup</li>
             <li>Remote or on-site support</li>
           </ul>
           <p class="pricing__note">Hourly rate available for extended help.</p>
@@ -251,9 +376,9 @@
             <span class="pricing__amount">₱80</span>
           </div>
           <ul class="pricing__list">
-            <li>Research & documentation</li>
+            <li>Research &amp; documentation</li>
             <li>Presentation design (PPT)</li>
-            <li>Proofreading & formatting</li>
+            <li>Proofreading &amp; formatting</li>
             <li>Tech-related school projects</li>
           </ul>
           <p class="pricing__note">Rates vary by scope and deadline.</p>
@@ -294,12 +419,16 @@
         </div>
       </div>
       <div class="about__visual">
-        <div class="about__card-stack">
+        <div class="about__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80&auto=format&fit=crop"
+            alt="Focused developer working late at their desk"
+            loading="lazy"
+          />
           <div class="about__float-card">
             <span>🤝</span>
             <p>Trusted by those we've helped</p>
           </div>
-          <div class="about__monogram">3K</div>
         </div>
       </div>
     </div>
@@ -368,9 +497,10 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__logo">3<span>K</span></div>
-      <p class="footer__tagline">Tech & Academic Services — Built on trust.</p>
+      <p class="footer__tagline">Tech &amp; Academic Services — Built on trust.</p>
       <div class="footer__links">
         <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
         <a href="#gallery">Work</a>
         <a href="#pricing">Pricing</a>
         <a href="#about">About</a>

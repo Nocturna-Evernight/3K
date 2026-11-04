@@ -54,7 +54,7 @@ style.textContent = `
 document.head.appendChild(style);
 
 const animTargets = document.querySelectorAll(
-  '.card, .about__content, .about__visual, .stats__item, .contact__form, .section__header'
+  '.card, .about__content, .about__visual, .stats__item, .contact__form, .section__header, .process__step'
 );
 
 animTargets.forEach((el, i) => {
