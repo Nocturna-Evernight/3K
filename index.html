@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3K — Tech repairs, tech assistance, and academic support services." />
+  <title>3K | Tech & Academic Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">3<span>K</span></a>
+      <ul class="nav__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Get in Touch
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__badge">🚀 Now Open for Clients</div>
+      <h1 class="hero__title">
+        Tech & Academic<br/>
+        <span>Services, Done Right.</span>
+      </h1>
+      <p class="hero__sub">
+        We handle tech repairs, gadget troubleshooting, IT assistance,
+        and academic support — so you can focus on what matters most.
+      </p>
+      <div class="hero__actions">
+        <button class="btn btn--primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          Our Services
+        </button>
+        <button class="btn btn--outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Book a Session
+        </button>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item">
+        <span class="stats__num">100%</span>
+        <span class="stats__label">Client Satisfaction Goal</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num">3+</span>
+        <span class="stats__label">Service Categories</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num">Fast</span>
+        <span class="stats__label">Turnaround Time</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num">24/7</span>
+        <span class="stats__label">Online Inquiry</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">What We Do</span>
+        <h2 class="section__title">Services We Offer</h2>
+        <p class="section__sub">From broken screens to academic deadlines — 3K has you covered.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="card">
+          <div class="card__icon">🔧</div>
+          <h3 class="card__title">Tech Repairs</h3>
+          <p class="card__desc">
+            Laptop & PC troubleshooting, OS reinstallation, hardware fixes,
+            slow device tune-ups, and more.
+          </p>
+          <ul class="card__list">
+            <li>Virus & malware removal</li>
+            <li>Hardware diagnosis & repair</li>
+            <li>OS setup & reinstall</li>
+            <li>Performance optimization</li>
+          </ul>
+        </div>
+
+        <div class="card card--featured">
+          <div class="card__badge">Most Requested</div>
+          <div class="card__icon">💻</div>
+          <h3 class="card__title">Tech Assistance</h3>
+          <p class="card__desc">
+            Need help setting something up or figuring out how software works?
+            We're your personal tech assistant.
+          </p>
+          <ul class="card__list">
+            <li>Software setup & configuration</li>
+            <li>Network & Wi-Fi issues</li>
+            <li>File recovery & backup</li>
+            <li>Remote & on-site support</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">📚</div>
+          <h3 class="card__title">Academic Assistance</h3>
+          <p class="card__desc">
+            Struggling with reports, research, or technical school projects?
+            We can guide and support you through it.
+          </p>
+          <ul class="card__list">
+            <li>Research & documentation help</li>
+            <li>Presentation design (PPT)</li>
+            <li>Proofreading & formatting</li>
+            <li>Tech-related school projects</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__content">
+        <span class="section__tag">Who We Are</span>
+        <h2 class="section__title">The 3K Team</h2>
+        <p>
+          3K is a small, tight-knit team built around family and a shared passion
+          for technology and helping people. The name <strong>3K</strong> represents
+          us — a family-inspired brand dedicated to providing honest, affordable,
+          and reliable services.
+        </p>
+        <p>
+          Whether you're a student scrambling before a deadline, a professional
+          with a busted laptop, or someone who just needs a hand navigating tech —
+          we're here for you, no judgment, no overcomplicated jargon.
+        </p>
+        <div class="about__values">
+          <div class="value"><span>✅</span> Honest Pricing</div>
+          <div class="value"><span>✅</span> No Jargon</div>
+          <div class="value"><span>✅</span> Family-Driven</div>
+          <div class="value"><span>✅</span> Always Learning</div>
+        </div>
+      </div>
+      <div class="about__visual">
+        <div class="about__card-stack">
+          <div class="about__float-card">
+            <span>🤝</span>
+            <p>Trusted by those we've helped</p>
+          </div>
+          <div class="about__monogram">3K</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="section__header">
+        <span class="section__tag">Reach Out</span>
+        <h2 class="section__title">Let's Work Together</h2>
+        <p class="section__sub">Fill out the form below or reach us directly. We'll get back to you ASAP.</p>
+      </div>
+      <form class="contact__form" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Juan dela Cruz" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="juan@email.com" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option value="tech-repair">Tech Repair</option>
+            <option value="tech-assist">Tech Assistance</option>
+            <option value="academic">Academic Assistance</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="message" rows="5" placeholder="Describe what you need help with..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+        <p class="form__note">We'll reply within 24 hours. No spam, ever.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">3<span>K</span></div>
+      <p class="footer__tagline">Tech & Academic Services — Built on trust.</p>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer__copy">© 2026 3K. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
