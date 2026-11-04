@@ -18,6 +18,9 @@
       <a href="#" class="nav__logo">3<span>K</span></a>
       <ul class="nav__links">
         <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Work</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -32,6 +35,9 @@
     <div class="nav__mobile" id="mobileMenu">
       <ul>
         <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#gallery" onclick="closeMobileMenu()">Work</a></li>
+        <li><a href="#pricing" onclick="closeMobileMenu()">Pricing</a></li>
+        <li><a href="#testimonials" onclick="closeMobileMenu()">Reviews</a></li>
         <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
         <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
       </ul>
@@ -98,6 +104,9 @@
       <div class="services__grid">
 
         <div class="card">
+          <div class="card__img">
+            <img src="images/service-repairs.jpg" alt="Tech Repairs" loading="lazy" />
+          </div>
           <div class="card__icon">🔧</div>
           <h3 class="card__title">Tech Repairs</h3>
           <p class="card__desc">
@@ -114,6 +123,9 @@
 
         <div class="card card--featured">
           <div class="card__badge">Most Requested</div>
+          <div class="card__img">
+            <img src="images/service-assist.jpg" alt="Tech Assistance" loading="lazy" />
+          </div>
           <div class="card__icon">💻</div>
           <h3 class="card__title">Tech Assistance</h3>
           <p class="card__desc">
@@ -129,6 +141,9 @@
         </div>
 
         <div class="card">
+          <div class="card__img">
+            <img src="images/service-academic.jpg" alt="Academic Assistance" loading="lazy" />
+          </div>
           <div class="card__icon">📚</div>
           <h3 class="card__title">Academic Assistance</h3>
           <p class="card__desc">
@@ -141,6 +156,177 @@
             <li>Proofreading & formatting</li>
             <li>Tech-related school projects</li>
           </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Our Work</span>
+        <h2 class="section__title">What We Handle</h2>
+        <p class="section__sub">A glimpse into the kind of work 3K takes on every day.</p>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide">
+          <img src="images/hero-bg.jpg" alt="3K workspace" loading="lazy" />
+          <div class="gallery__overlay">
+            <span>Our Setup</span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="images/service-repairs.jpg" alt="Tech Repairs" loading="lazy" />
+          <div class="gallery__overlay">
+            <span>🔧 Repairs</span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="images/service-assist.jpg" alt="Tech Assistance" loading="lazy" />
+          <div class="gallery__overlay">
+            <span>💻 Tech Help</span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="images/service-academic.jpg" alt="Academic Assistance" loading="lazy" />
+          <div class="gallery__overlay">
+            <span>📚 Academic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Transparent Rates</span>
+        <h2 class="section__title">Simple Pricing</h2>
+        <p class="section__sub">No hidden fees. No overcomplicated packages. Just honest rates.</p>
+      </div>
+      <div class="pricing__grid">
+
+        <div class="pricing__card">
+          <div class="pricing__icon">🔧</div>
+          <h3 class="pricing__name">Tech Repairs</h3>
+          <div class="pricing__price">
+            <span class="pricing__from">starts at</span>
+            <span class="pricing__amount">₱150</span>
+          </div>
+          <ul class="pricing__list">
+            <li>Virus & malware removal</li>
+            <li>OS reinstallation</li>
+            <li>Hardware diagnosis</li>
+            <li>Performance tune-up</li>
+          </ul>
+          <p class="pricing__note">Final rate depends on complexity.</p>
+          <button class="btn btn--outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Get a Quote
+          </button>
+        </div>
+
+        <div class="pricing__card pricing__card--featured">
+          <div class="pricing__badge">Best Value</div>
+          <div class="pricing__icon">💻</div>
+          <h3 class="pricing__name">Tech Assistance</h3>
+          <div class="pricing__price">
+            <span class="pricing__from">starts at</span>
+            <span class="pricing__amount">₱100</span>
+          </div>
+          <ul class="pricing__list">
+            <li>Software setup & config</li>
+            <li>Network troubleshooting</li>
+            <li>File recovery & backup</li>
+            <li>Remote or on-site support</li>
+          </ul>
+          <p class="pricing__note">Hourly rate available for extended help.</p>
+          <button class="btn btn--primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Book a Session
+          </button>
+        </div>
+
+        <div class="pricing__card">
+          <div class="pricing__icon">📚</div>
+          <h3 class="pricing__name">Academic Assistance</h3>
+          <div class="pricing__price">
+            <span class="pricing__from">starts at</span>
+            <span class="pricing__amount">₱80</span>
+          </div>
+          <ul class="pricing__list">
+            <li>Research & documentation</li>
+            <li>Presentation design (PPT)</li>
+            <li>Proofreading & formatting</li>
+            <li>Tech-related school projects</li>
+          </ul>
+          <p class="pricing__note">Rates vary by scope and deadline.</p>
+          <button class="btn btn--outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Get a Quote
+          </button>
+        </div>
+
+      </div>
+      <p class="pricing__disclaimer">
+        💬 Not sure what you need? Just <a href="#contact">reach out</a> — we'll figure it out together.
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Kind Words</span>
+        <h2 class="section__title">What People Say</h2>
+        <p class="section__sub">Real feedback from people we've had the chance to help.</p>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testi__card">
+          <div class="testi__stars">★★★★★</div>
+          <p class="testi__quote">
+            "My laptop was running so slow I thought it was done for. 3K cleaned it up and it
+            runs like new again. Super legit and affordable!"
+          </p>
+          <div class="testi__author">
+            <div class="testi__avatar">M</div>
+            <div>
+              <strong>Marco R.</strong>
+              <span>Tech Repair Client</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi__card testi__card--featured">
+          <div class="testi__stars">★★★★★</div>
+          <p class="testi__quote">
+            "I had a thesis defense the next day and my slides were a mess. They helped me
+            fix everything overnight. I passed with flying colors. 🙏"
+          </p>
+          <div class="testi__author">
+            <div class="testi__avatar">A</div>
+            <div>
+              <strong>Alyssa T.</strong>
+              <span>Academic Assistance Client</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi__card">
+          <div class="testi__stars">★★★★★</div>
+          <p class="testi__quote">
+            "Set up my whole home Wi-Fi and fixed my printer issue in one visit. No BS,
+            no jargon — just got it done. Will definitely come back."
+          </p>
+          <div class="testi__author">
+            <div class="testi__avatar">J</div>
+            <div>
+              <strong>Jay B.</strong>
+              <span>Tech Assistance Client</span>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -249,6 +435,9 @@
       <p class="footer__tagline">Tech & Academic Services — Built on trust.</p>
       <div class="footer__links">
         <a href="#services">Services</a>
+        <a href="#gallery">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
