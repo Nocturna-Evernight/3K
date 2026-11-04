@@ -191,7 +191,27 @@
         <h2 class="section__title">Let's Work Together</h2>
         <p class="section__sub">Fill out the form below or reach us directly. We'll get back to you ASAP.</p>
       </div>
-      <form class="contact__form" id="contactForm" onsubmit="handleSubmit(event)">
+      <!-- 
+        FORMSPREE SETUP:
+        1. Go to https://formspree.io and sign up (free)
+        2. Create a new form → copy your form endpoint URL
+        3. Replace YOUR_FORMSPREE_ID below with your actual form ID
+           e.g. action="https://formspree.io/f/abcde123"
+      -->
+      <form
+        class="contact__form"
+        id="contactForm"
+        action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+        method="POST"
+        onsubmit="handleSubmit(event)"
+      >
+        <!-- Formspree: redirect back to your site after submission -->
+        <input type="hidden" name="_next" value="https://nocturnaevernight07.github.io/3K/?sent=true" />
+        <!-- Formspree: custom email subject -->
+        <input type="hidden" name="_subject" value="New inquiry from 3K website" />
+        <!-- Honeypot anti-spam field -->
+        <input type="text" name="_gotcha" style="display:none" />
+
         <div class="form__row">
           <div class="form__group">
             <label for="name">Your Name</label>

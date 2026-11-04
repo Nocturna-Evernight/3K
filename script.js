@@ -63,20 +63,28 @@ animTargets.forEach((el, i) => {
   observer.observe(el);
 });
 
-// --- Contact Form ---
+// --- Contact Form (Formspree-compatible) ---
 function handleSubmit(e) {
-  e.preventDefault();
-
   const form = e.target;
   const btn = form.querySelector('button[type="submit"]');
-  const name = form.name.value.trim();
+  const isFormspreeConfigured = form.action && !form.action.includes('YOUR_FORMSPREE_ID');
 
-  // Simulate submission (replace with real backend/EmailJS/Formspree later)
+  if (isFormspreeConfigured) {
+    // Let Formspree handle the actual POST — just show a loading state
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    // Form will POST natively and redirect to _next URL
+    return; // don't prevent default — let the form submit
+  }
+
+  // Fallback: Formspree not yet set up, show demo UX
+  e.preventDefault();
+  const name = form.name.value.trim();
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
   setTimeout(() => {
-    btn.textContent = `✓ Message Sent, ${name}!`;
+    btn.textContent = `✓ Message Received, ${name}! (Demo mode — Formspree not set up yet)`;
     btn.style.background = '#222';
     form.reset();
 
@@ -84,7 +92,7 @@ function handleSubmit(e) {
       btn.textContent = 'Send Message →';
       btn.disabled = false;
       btn.style.background = '';
-    }, 4000);
+    }, 5000);
   }, 1200);
 }
 
